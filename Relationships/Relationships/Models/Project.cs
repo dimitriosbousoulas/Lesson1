@@ -12,7 +12,7 @@ namespace Relationships.Models
         public int ProjectId { get; set; }
         public string Title { get; set; }
 
-
+        public virtual Employee Employee { get; set; }
 
 
     }

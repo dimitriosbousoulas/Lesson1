@@ -16,7 +16,7 @@ namespace Relationships.Models
         public string Name { get; set; }
         public virtual Card Card { get; set; }  //Edo me virtual exo petixei lazy loading
 
-        public virtual ICollection<Project> Projects { get; set; }
+      
 
     }
 }
