@@ -9,6 +9,7 @@ namespace Relationships.Models
 {
     public class Card
     {
+
         [ForeignKey("Employee")]
         public int CardId { get; set; } //Ayto tha ginei primary key
         public string Title { get; set; }

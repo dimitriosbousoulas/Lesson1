@@ -11,13 +11,39 @@ namespace Relationships
     {
         static void Main(string[] args)
         {
+           
+            
             MyDatabase db = new MyDatabase();
+            // var lista = db.Employees;
 
-            foreach (var item in db.Projects)
+
+            var pragma = from emp in db.Employees
+                         from dsk in db.Desks
+                         select new
+                         {
+                             Onoma = emp.Name,
+                             Modelo = dsk.Title
+                         };
+
+
+            foreach (var item in pragma)
             {
-                Console.WriteLine(item.Title);
-              
+                Console.WriteLine("{0,-14}{1,-14}",item.Onoma, item.Modelo);
             }
+
+
+
+
+            //Noumero 1
+            //foreach (var emp in lista)
+            //{
+            //    Console.WriteLine("{0,-15}", emp.Name);
+            //    foreach (var desk in emp.Desks)
+            //    {
+            //        Console.WriteLine("\t{0}", desk.Title);
+            //    }
+            //}
+
 
 
             //foreach (var item in db.Employees)
@@ -38,9 +64,9 @@ namespace Relationships
             //{
             //    Console.WriteLine("{0,-15}{1,-16}}",emp.Name,emp.Card.Title);
             //}
-            
-            
-            
+
+
+
             //var lista = db.Employees.ToList();
 
 
