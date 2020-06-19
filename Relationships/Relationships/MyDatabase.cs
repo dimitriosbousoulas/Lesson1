@@ -11,5 +11,9 @@ namespace Relationships
     public class MyDatabase : DbContext    //Mporei na legetai ApplicationDbContext i opos allios thes
     {
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Card> Cards { get; set; }
+
+
+
     }
 }

@@ -57,7 +57,12 @@
     <Compile Include="Migrations\202006191639560_mitsos.designer.cs">
       <DependentUpon>202006191639560_mitsos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006191743099_OneToOneRelationship.cs" />
+    <Compile Include="Migrations\202006191743099_OneToOneRelationship.designer.cs">
+      <DependentUpon>202006191743099_OneToOneRelationship.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Card.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="MyDatabase.cs" />
     <Compile Include="Program.cs" />
@@ -70,6 +75,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202006191639560_mitsos.resx">
       <DependentUpon>202006191639560_mitsos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006191743099_OneToOneRelationship.resx">
+      <DependentUpon>202006191743099_OneToOneRelationship.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
