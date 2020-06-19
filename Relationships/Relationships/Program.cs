@@ -13,17 +13,31 @@ namespace Relationships
         {
             MyDatabase db = new MyDatabase();
 
+            foreach (var item in db.Projects)
+            {
+                Console.WriteLine(item.Title);
+              
+            }
 
+
+            //foreach (var item in db.Employees)
+            //{
+            //    Console.WriteLine(item.Name);
+            //    foreach (var pro in item.Projects)
+            //    {
+            //        Console.WriteLine(pro.Title);
+            //    }
+            //}
 
             //var lista = db.Employees.Include("Card"); //EAGER LOADING SXIMATISA ENA MEGALO QUERRY
             //var lista = db.Employees.Include(x => x.Card);           //EAGER LOADING SXIMATISA ENA MEGALO QUERRY
 
-            var lista = db.Employees;
+            //var lista = db.Employees;
 
-            foreach (var emp in lista)
-            {
-                Console.WriteLine("{0,-15}",emp.Name);
-            }
+            //foreach (var emp in lista)
+            //{
+            //    Console.WriteLine("{0,-15}{1,-16}}",emp.Name,emp.Card.Title);
+            //}
             
             
             

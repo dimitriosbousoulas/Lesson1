@@ -7,13 +7,13 @@ namespace Relationships.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class mitsos : IMigrationMetadata
+    public sealed partial class mitsosInitial : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(mitsos));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(mitsosInitial));
         
         string IMigrationMetadata.Id
         {
-            get { return "202006191639560_mitsos"; }
+            get { return "202006191816247_mitsosInitial"; }
         }
         
         string IMigrationMetadata.Source
