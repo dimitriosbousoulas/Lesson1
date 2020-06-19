@@ -14,6 +14,8 @@ namespace Relationships
         public DbSet<Card> Cards { get; set; }
         public DbSet<Project> Projects { get; set; }
         public DbSet<Desk> Desks { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
 
 

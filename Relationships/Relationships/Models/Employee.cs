@@ -20,6 +20,8 @@ namespace Relationships.Models
 
         public virtual ICollection<Desk> Desks { get; set; }
 
+        public virtual ICollection<Order> Orders { get; set; }
+
 
 
     }

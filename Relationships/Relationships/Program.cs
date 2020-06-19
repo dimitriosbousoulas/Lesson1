@@ -14,22 +14,30 @@ namespace Relationships
            
             
             MyDatabase db = new MyDatabase();
-            // var lista = db.Employees;
 
-
-            var pragma = from emp in db.Employees
-                         from dsk in db.Desks
-                         select new
-                         {
-                             Onoma = emp.Name,
-                             Modelo = dsk.Title
-                         };
-
-
-            foreach (var item in pragma)
+            foreach (var item in db.Orders)
             {
-                Console.WriteLine("{0,-14}{1,-14}",item.Onoma, item.Modelo);
+                Console.WriteLine($"{item.Employee.Name,-13}{item.Product.Title,-13}{item.Price,-13}{item.OrderedDate.Date,-13}");
             }
+
+
+            //// var lista = db.Employees;
+
+
+            //var pragma = from emp in db.Employees
+            //             from dsk in db.Desks
+            //             select new
+            //             {
+            //                 Onoma = emp.Name,
+            //                 Modelo = dsk.Title
+            //             };
+
+
+
+            //foreach (var item in pragma)
+            //{
+            //    Console.WriteLine("{0,-14}{1,-14}",item.Onoma, item.Modelo);
+            //}
 
 
 
