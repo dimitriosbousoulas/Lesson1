@@ -10,7 +10,14 @@ namespace Relationships
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Kalimera");
+            MyDatabase db = new MyDatabase();
+            var lista = db.Employees.ToList();
+
+            foreach (var emp in lista)
+            {
+                Console.WriteLine(emp.Name);
+            }
+
         }
     }
 }
